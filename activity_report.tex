@@ -24,12 +24,12 @@ goal is to provide better strategies and practices for open source
 projects with the adopt more agile principles. This is motivated by
 the quality of software being produced using agile methods. The focus
 of these methodologies is to produce working software quickly and
-frequently. And then to grow it up maintaining the quality and
+frequently and then to grow it up maintaining the quality and
 avoiding the chance to introduce bugs with automated tests among other
 techniques. With the introduction of the right practices from agile
 methods in open source communities, they would surely improve the
 quality of the delivered software therefore sustaining its
-trustability.
+trustworthiness.
 
 This article is divided in four sections. Section \ref{sec:work}
 describes the ongoing work in order to increase agile adoption in open
@@ -44,81 +44,128 @@ of the work according to the knowledge acquired during this work.
 \label{sec:work}
 
 Three main activities are being developed in this work. The first one,
-described in section \ref{sub:research}, regards a research to be done
-relating agile methods and open source development. The second one is
-an experiment with an open source project being conducted in the
-academic environment as shown on Section \ref{sub:experiment}. And the
-last one, section \ref{sub:talks} is about dissemination of knowledge
+described in Section \ref{sub:surveys}, regards a research to be done
+relating agile methods and open source development. The second
+(Section \ref{sub:tools}) one is the development of a set of tools to
+increase agile practices adoptions in open source project. And the
+last one, Section \ref{sub:talks} is about dissemination of knowledge
 in conferences.
 
-\subsection{Researches to relate open source and agile methods}
-\label{sub:research}
+\subsection{Suverys to relate open source and agile methods}
+\label{sub:surveys}
 
 Two questionnaires were elaborated to determine how much knowledge
 open source practitioners and enthusiasts have regarding agile methods
 and vice versa. Each of those were meant to be distributed in the most
 important conferences of each community.
 
-The first conference, FISL (\textit{Fórum Internacional de Software
-  Livre} - International Forum of Software \textit{Libre}), happened
-in Porto Alegre, Brazil, in late April (17th, 18th and 19h) and
-gathered over 7000 people from the Open Source Community. The second,
-Agile 2008, will take place in August (4th to 8th) in Toronto, Canada,
-and, although it is not such a wide event, it will gather a good
-number of people from the Americas that are involved with Agile
-methodologies. One must understand that FISL's participants count with
-lots of users and non contributors supporters whereas Agile 2008 only
-attracts really involved people which explains why the Agile 2008 is
-much smaller.
+Regarding the open source community, FISL (\textit{Fórum Internacional
+  de Software Livre} - International Forum of Software \textit{Libre})
+is the biggest event and the next edition (10.0) will happen in Porto
+Alegre, Brazil, in late June 2009 (25th, 26th and 27th). The
+organization expect to gather over 8000 people from the Open Source
+Community. Work has already been done to ensure the survey to be
+included in the registration form.
 
-The research was elaborated to be distributed certain talks during the
-event at the entrance of the room and collected at the exit along with
-the talk evaluation form. The FISL questionnaire focuses on how much
-knowledge attendees have on agile methods and practices, and how much
-of it they apply to their open source projects. The answer would
-provide a truthful basis to create tools that could fit the
-developers' needs and working methods.
+Regarding the agile community, there are two options. The first one,
+XP 2009, will take place in the end of May 2009 (26th to 30th) in
+Sardinia, Italy. It is the most important and oldest European
+conference for Agile methods and is focused in eXtreme Programming
+(XP). The second option is Agile 2009 that will happen from August
+24th to 28th in Chicago, USA. It is the main event regarding Agile
+methods in the world but attracts mostly north Americans. Both options
+are being considered and one will be chosen according to further
+discussions with each organization.
 
-The Agile 2008 questionnaire was more interested in discovering on
-what extent the practitioners are enrolled in open source projects;
-from those experiences, what they learned from open source
-contributions that could be applied to their agile teams. What agile
-practices they introduced in their open source communities and what
-was the feedback about it. Those answers would provide an insight to
-what are the the open source community needs in order to adopt more
-agile practices. It would also ensure that the tools can attack the
-most common problems faced by open source developers when asked to be
-agile.
+Each event should receive a different survey since the public is
+supposed to be mostly different. The surver to be distributed among
+open source enthusiasts tries to determine how much knowledge do they
+have about agile methods and how much of that knowledge do they
+currently apply to their projects. Finally, we will try to determinate
+which practices lack essential tools to determine if more tools should
+be developed.
 
-\subsection{Experiment to compare the products created by an agile
-  team and an open source team}
-\label{sub:experiment}
+The questionnaire aimed for agile practicioners is more interested in
+discovering on what extent the practitioners are enrolled in open
+source projects; from those experiences, what they learned from open
+source contributions that could be applied to their agile teams. What
+agile practices they introduced in their open source communities and
+what was the feedback about it. Those answers would provide an insight
+to what are the the open source community needs in order to adopt more
+agile practices. It would also ensure that the tools to be developed
+really attack the most common problems faced by open source developers
+when asked to be agile.
 
-In parallel, an open source project
-(Archimedes\footnote{http://www.archimedes.org.br/} - The Open CAD) is
-hosting an experiment to determine what are the main differences in
-the results created by an agile team and a traditional open source
-team. Two parallel teams developing almost independently are working
-on the project to improve it. One was composed of an experienced coach
-with deep knowledge of the system and computer science students
-working in a traditional agile environment. The other one, was leaded
-by the same coach but with a distributed environment with a more
-traditional open source approach for development. The study will last
-until July 2008 when the agile team cease work.
+\subsection{Tools to improve agile practices that boost communication}
+\label{sub:tools}
 
+The main issue when dealing with open source projects is to handle a
+distributed team of volunteers. Although the agile methods community
+have been working on distributed agile solutions, the main tools used
+to support it are distributed pair programming tools and screen
+sharing systems. Those intend to improve communication between two
+persons in real-time.
+
+Open source projects' teams tend to work asynchronously and require
+improvement in tools that could help this sort of communication
+boost. To elaborate such tools, the work was based on agile practices
+that focus on information spreading.
+
+First, based on the information workspace practice, one has to
+consider that an open source project's workspace is the project's web
+site. It means a developer should be able to log in the web site and
+discover what is the work being done, what has already been done, what
+is the status of the build and test results and a few other
+information. Most of this data can be collected automatically from the
+source code repository and needs to be presented according to the
+team's feeling. Developing such tool and build a set of metrics in it
+as a plug in for a forge system would allow projects to easily benefit
+from this data with little work.
+
+The second tool comes from the need to plan and organize a release
+using elements that are easily moveable and editable. Agile teams tend
+to use what they call story cards in a wall to quickly arrange their
+time schedule and priorities. Since open source projects frequently
+use bug tracking systems to log every requirements (including new
+features and bug fixes), leaders should have a way to easily overview
+and rearrange the entries in this system. This work could even be
+performed partially by the community itself using organizational
+systems such as wikipedia.
+
+In order to improve their work flow, agile teams often have
+retrospective meetings to evaluate what happend and suggest
+improvements. This sort of analysis is rare in open source communities
+because it requires all members of the team to be online in a
+communication channel at the same time. Logging of the past is kept in
+mailing lists or in the repository commits' comments. It does not
+allow, however, to have problems that do not regard the code itself
+mentioned and solved. If a team had a tool that allowed them to post
+comments or notes in a time line over time, the discussions could flow
+with the release and the leader could compile suggested approaches to
+problems in the mailing list or, automatically, from the website.
+
+Finally, to help keeping every member of the team up to date with the
+changes other people are performating, teams should have a tool
+related to that informative workspace and to the source code
+itself. This tool could be an IRC or Instant Message bot that helps
+members of the team communicate and logs chats as well as notes and
+comments regarding a story or a commit. It would reduce time required
+from the developers to log important messages and important
+information would be flashed to the people involved quickly reducing
+their work to search for it.
 
 \subsection{Dissemination of knowledge in those communities}
 \label{sub:talks}
 
-At last, two talks were presented at FISL related Qualipso
+At last, two talks were presented at FISL 9.0 related Qualipso
 Project. The first one was an initiative to introduce agile practices
 in open source communities by creating \textit{Coding Dojos}
-(\cite{DaveThomas}, \cite{Bossavit}) in those
-environments. \textit{Coding Dojos} are meetings in which participants
-share knowledge to develop code using Test Driven Development (TDD) to
-support their code proposals. It has been very effective in
-distributing knowledge amongst participants and improve the habit of
-creating automated tests for the software being created.
+\cite{DaveThomas,Bossavit} in those environments. \textit{Coding
+  Dojos} are meetings in which participants share knowledge to develop
+code using Test Driven Development (TDD) to support their code
+proposals. It has been very effective in distributing knowledge
+amongst participants and improve the habit of creating automated tests
+for the software being created.
 
 The second one was to promote Qualipso and the Competence Center that
 is being created in São Paulo. It presented the main goals of the
@@ -128,17 +175,21 @@ benefit from the center and how it should evolve in the next months.
 \section{Difficulties}
 \label{sec:problems}
 
-Due to operational problems, the FISL organizers where not able to
-distribute our research. However, they will promote an on line
-research through the list of presenters. This questionnaire is being
-developed and will have to aim for a broader audience to compensate
-the lack of precision that would have been obtained with FISL's
-audience.
+The surveys were intended to be run this but contacts with the
+conferences were made too late and led to the impossibility to have it
+spread to the atendees. An alternative survey on paper was printed but
+the organization had technical problems and was not able to recover
+the answers. This time, we are planing way before schedule to try
+avoiding such problems. If the surveys do not get inserted in the
+registration process, external web sites will be created and we will
+try to have the link sent to all attendees.
 
-As we could not clarify yet which are the main issues regarding the
-adoption of agile methods into open source traditional development
-process, it has been hard to start developing tools that may
-facilitate such task.
+Finally, choosing a target platform to develop the tools is a problem
+since there is a growing amount of free software forges that focus on
+different aspects. So far, work is being performed to define what is
+the best interface and working system for those tools on a separate
+platform using Ruby on Rails. Its integration with those forges is
+planned to happen around march 2009.
 
 \section{Deviations}
 \label{sec:deviations}
